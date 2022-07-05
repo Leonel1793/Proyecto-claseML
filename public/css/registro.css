@@ -1,0 +1,277 @@
+*{
+    box-sizing: border-box;
+}
+
+.form-register{
+    display: flex;
+    flex-direction: column;
+    background-color: #ebebeb;
+}
+
+.form-control {
+    margin: 20px;
+    position: relative;
+}
+
+.form-control i{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: green;
+}
+
+.form-control input{
+    height: 30px;
+    width: 100%;
+}
+
+.form-control input:valid{
+    color:green;
+    border:green 1px solid;
+}
+
+.form-control input:invalid ~i {
+    display: none;
+}
+
+.form-control input:valid ~i {
+    display: inline;
+}
+
+.form-control input:invalid {
+    color: red;
+} 
+
+.form-control1{
+    margin: 20px;
+}
+
+.form-control-nacim{
+    margin:20px;
+    font-weight: bold;
+}
+
+.form-control-nacim input{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.form-control-perfil-foto{
+    margin: 0px 20px;
+}
+
+.form-control-perfil-foto label{
+    font-weight: bold;
+}
+
+.form-control-perfil-foto input{
+    margin:20px 0px; 
+}
+
+.radio input{
+    width: 10%;
+}
+
+.form-control-intereses p{
+    font-weight: bold;
+}
+
+.form-control-intereses{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.form-control-intereses label{
+    margin: 10px 0px 20px 20px;
+}
+
+.button{
+    display: flex;
+    text-align: center;
+    justify-content:center;
+}
+
+.button button{
+    margin: 20px;
+    height: 30px;
+}
+
+button:hover{
+    color: blue;
+}
+
+main{
+    background-color: #ebebeb;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+} 
+
+header {
+    background-color: #EAC926;
+}
+
+.header-mobile{
+    display: flex;
+    flex-direction: row;   
+    justify-content: space-around;
+}
+
+.header-mobile img{
+    width: 50vw;
+    padding: 20px 0px 0px 20px;
+}
+
+.header-mobile form{
+    padding: 10px 20px 0px 10px;
+}
+
+.header-mobile button{
+    position: absolute;
+    top:25px;
+    right: 15px;    
+}   
+
+.header-mobile .search{
+    position: relative;
+}
+
+.header-mobile input{
+    width: 40vw;
+    margin:15px 0px;
+}
+
+.bar-icon{
+    text-align: center;
+}
+
+.bar-icon i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+.main-navbar{
+    display: none;
+}
+
+.main-navbar a{
+    text-decoration: none; 
+   color: black;
+   display: inline-block;
+   padding: 0px;
+   margin: 3px;  
+}
+
+.main-navbar ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;    
+}
+.navbar-separado{
+    margin:0px 0px 20px;
+}
+
+.icono-dolar{
+    text-align: center;
+    padding: 40px 10px 0px 10px;
+}
+
+footer{
+    text-align: center;    
+}
+
+.text-copyright{
+    text-align: left;
+    margin: 25px 0px;
+    padding-top: 40px;
+}
+
+.footer-main i{
+    font-size: 2em;
+    color: blue;
+    margin-top: 70px;
+}
+
+.footer-main div{
+    margin: 10px 0px;
+}
+
+@media (min-width:361px){
+
+    .header-mobile form{
+        padding-top:20px;
+    }
+    
+    .header-mobile input{
+        height: 30px;
+    }
+
+    .header-mobile button{
+    top:35px;
+    height: 30px;
+    width: 30px;
+    }
+}
+
+
+@media (min-width:769px){   
+    
+    .main-navbar{
+        display: block;
+    }
+
+    .bar-icon{
+        display: none;
+    }
+
+    .header-desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .header-desktop img{
+        width: 30vw;
+    }
+
+    .header-desktop .search{
+        width: 30vw;
+        margin-left: 15px;
+    }
+
+    .header-desktop input{
+        width: 100%;
+    }
+
+    .main-navbar ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 30px 0px 0px;
+    }
+
+    .navbar-separado{
+        margin:0px 100px 0px 5px;
+    } 
+
+    .footer-main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .footer-main i:hover{
+        color: #EAC926;;
+    }
+}
+

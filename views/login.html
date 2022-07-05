@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Mercado Liebre</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <script src="https://kit.fontawesome.com/f5adc79cf2.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/css/login.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-desktop">
+                <div class="header-mobile">
+                    <div class="logo">
+                        <img src="/images/logo-mercado-liebre.svg" width="160"alt="Logo Mercado Liebre">
+                    </div>
+        
+                    <div class="search">   
+                        <form>
+                            <input type="text" placeholder="Buscar productos, marcas">
+                            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </div>
+                </div>
+        
+                    <div class="icono-dolar">
+                        <p><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+                    </div>
+            </div>
+        
+                <div class="main-navbar">
+                    <ul>
+                        
+                        <li><a href="#">Ofertas</a></li>
+                        <li><a href="#">Tiendas oficiales</a></li>
+                        <li><a href="#">Vender</a></li>
+                        <li class="navbar-separado"><a href="#">Ayuda</a></li>
+                        
+                        <li ><a href="/registro">Crea tu cuenta</a><i class="fa-solid fa-address-card"></i></li>
+                        <li><a href="/login">Ingresá</a><i class="fa-solid fa-right-to-bracket"></i></li>
+                        <li><a href="#">Mis compras</a><i class="fa-solid fa-basket-shopping"></i></li> 
+                    </ul>
+                </div>   
+                
+                <div class="bar-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+            
+            </header>
+  
+        <main>
+            <form action="/inicia-sesion" method="POST" class="form-sesion">
+            <div class="form-control">
+                <label></label>
+                <input type="text" name="nombre"  placeholder="Nombre de usuario" required>
+            </div>
+            <div class="form-control">
+                <label></label>
+                <input type="password" name="password" placeholder="Contraseña" required>
+            </div>
+            <div class="button">
+                <button type="submit">Enviar</button>
+            </div>
+            </form>
+        </main>
+        <footer>
+            <section>
+                <div class="footer-main">
+                    
+                    <div>
+                    <div><i class="fa-solid fa-credit-card"></i></div>
+                <strong>Pagá con tarjeta o en efectivo</strong>
+                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                    puntos de pago. ¡Y siempre es seguro!</p>
+                </div>
+                  
+                <div>
+                <div><i class="fa-solid fa-gift" ></i></div>
+                    <strong>Envío gratis desde $2500</strong>
+                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                    productos. Es un beneficio de Mercado Puntos.</p>
+                </div>
+
+                <div>
+                    <div> <i class="fa-solid fa-user-shield"></i></div>
+            <strong>Seguridad, de principio a fin</strong> 
+                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                    porque estás siempre protegid@.</p>
+                </div>
+                
+                </div>
+            <p class="text-copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+        
+        </section>
+        </footer>
+    </body>
+</html>
