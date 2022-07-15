@@ -40,38 +40,44 @@ header {
     background-color: #EAC926;
 }
 
-.header-mobile{
+
+.header{
     display: flex;
-    flex-direction: row;   
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.header-mobile img{
-    width: 50vw;
-    padding: 20px 0px 0px 20px;
+.logo{
+    width: 50%;
 }
 
-.header-mobile form{
-    padding: 10px 20px 0px 10px;
+.header img{
+    padding: 20px 0px 0px 10px;
+    width: 100%;
 }
 
-.header-mobile button{
+.header form{
+    padding-top: 20px;
+}
+
+.header button{
     position: absolute;
-    top:25px;
-    right: 15px;    
+    top:31px;
+    right: 1px;
+    height: 17px;    
+    background-color: white;
+    border: none;
+
 }   
 
-.header-mobile input{
-    width: 40vw;
-    margin:15px 0px;
-}
-
-.header-mobile .search{
+.header .search{
     position: relative;
+    width: 45%;
 }
 
-.bar-icon{
-    text-align: center;
+.header input{
+    width: 100%;
+    margin: 10px 0px;
 }
 
 .bar-icon i{
@@ -83,6 +89,9 @@ header {
     margin: 10px 0px 20px 0px;
     padding: 10px;
     width: 40px;
+}
+.bar-icon{
+    text-align: center;
 }
 
 .main-navbar{
@@ -111,6 +120,7 @@ header {
     padding: 40px 10px 0px 10px;
 }
 
+
 footer{
     text-align: center;  
     padding-top: 70px;  
@@ -120,6 +130,7 @@ footer{
     text-align: left;
     margin: 25px 0px;
     padding-top: 40px;
+    font-size: 14px;
 }
 
 .footer-main i{
@@ -134,19 +145,18 @@ footer{
 
 @media (min-width:361px){
 
-    .header-mobile form{
-        padding-top:20px;
-    }
+        .header form{
+            padding-top:20px;
+        }
+        
+        .header input{
+            height: 25px;
+        }
     
-    .header-mobile input{
-        height: 30px;
-    }
-
-    .header-mobile button{
-    height: 30px;
-    width: 30px;
-    top:35px;
-    }
+        .header button{
+        top:31px;
+        height: 23px;
+        }
 }
 
 
@@ -156,27 +166,17 @@ footer{
         display: block;
     }
 
+    .logo, .icono-dolar, .header .search {
+        width: 30%;
+    }
+
     .bar-icon{
         display: none;
     }
 
-    .header-desktop {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
 
-    .header-desktop img{
-        width: 30vw;
-    }
-
-    .header-desktop .search{
-        width: 30vw;
-        margin-left: 15px;
-    }
-
-    .header-desktop input{
-        width: 100%;
+    .header.search{
+        padding-top: 20px;
     }
 
     .main-navbar ul {
@@ -188,7 +188,8 @@ footer{
 
     .navbar-separado{
         margin:0px 100px 0px 5px;
-    } 
+    }
+
     
     .footer-main {
         display: flex;
@@ -198,5 +199,9 @@ footer{
 
     .footer-main i:hover{
         color: #EAC926;;
+    }
+
+    .form-control input{
+        width: 50%;
     }
 }

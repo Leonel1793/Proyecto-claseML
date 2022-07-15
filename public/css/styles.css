@@ -14,77 +14,44 @@ header {
     background-color: #EAC926;
 }
 
-main{
-    width: 90%;
-   margin: auto;
-}
 
-.precio {
-    font-size:18px; 
-    margin:0px;
-    padding: 0px;
-    width: 30%; 
-}
-
-.precio-descuento{
+.header{
     display: flex;
-    flex-direction: row;
-}
-
-.descuento{
-    font-size:16px;
-    color:green;
-    margin:0px 0px 20px 0px;
-    margin-left: 25px;
-    width: 70%;
-    
-}
-.descripciones{
-    font-size:16px;
-}
-
-.header-mobile{
-    display: flex;
-    flex-direction: row;   
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.header-mobile img{
-    width: 50vw;
-    padding: 20px 0px 0px 20px;
+.logo{
+    width: 50%;
 }
 
-.header-mobile form{
-    padding: 10px 20px 0px 10px;
+.header img{
+    padding: 20px 0px 0px 10px;
+    width: 100%;
 }
 
-.header-mobile button{
+.header form{
+    padding-top: 20px;
+}
+
+.header button{
     position: absolute;
-    top:25px;
-    right: 15px;    
+    top:31px;
+    right: 1px;
+    height: 17px;    
+    background-color: white;
+    border: none;
+
 }   
 
-.header-mobile .search{
+.header .search{
     position: relative;
+    width: 45%;
 }
 
-.header-mobile input{
-    width: 40vw;
-    margin:15px 0px;
-}
-
-.titulares {
-    font-size:24px;
-    background-color: #ebebeb;
-}
-
-.titulares h3{
-    margin:0%;
-    padding: 40px 50px;
-}
-
-.bar-icon{
-    text-align: center;
+.header input{
+    width: 100%;
+    margin: 10px 0px;
 }
 
 .bar-icon i{
@@ -103,6 +70,10 @@ main{
     padding: 0px;
     margin:0px;
    display: block;
+}
+
+.bar-icon{
+    text-align: center;
 }
 
 .main-navbar{
@@ -133,6 +104,51 @@ main{
 
 img{
     width: 90%;
+}
+
+main{
+    width: 90%;
+   margin: auto;
+   padding-bottom: 30px;
+}
+
+main section{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.precio {
+    font-size:18px; 
+    margin:0px;
+    padding: 0px;
+    width: 30%; 
+}
+
+.precio-descuento{
+    display: flex;
+    flex-direction: row;
+}
+
+.descuento{
+    font-size:16px;
+    color:green;
+    margin:0px 0px 20px 0px;
+    margin-left: 25px;
+    width: 70%;
+    
+}
+.descripciones{
+    font-size:16px;
+}
+
+.titulares {
+    font-size:24px;
+    background-color: #ebebeb;
+    width: 100%;
+    color: #666;
+    padding-bottom:10px;
+    padding-top: 30px;
 }
 
 .articulos{
@@ -187,35 +203,26 @@ footer{
 
     .articulos{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        width: 45%;    
+        width: 40%;  
+        flex-grow: 1;
+        margin:5px;  
     }
 
     .descripciones{
         display: block;
     }
- 
-    .articulos-formato-tablets{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    
-    .articulos-formato-tablets .articulos{
-        margin: 10px 10px;
-    }
 
-    .header-mobile form{
+    .header form{
         padding-top:20px;
     }
     
-    .header-mobile input{
-        height: 30px;
+    .header input{
+        height: 25px;
     }
 
-    .header-mobile button{
-    top:35px;
-    height: 30px;
-    width: 30px;
+    .header button{
+    top:31px;
+    height: 23px;
     }
 
     .precio{
@@ -229,6 +236,8 @@ footer{
     .elementos-info-producto{
         padding: 15px 0px;
     }
+
+    
     }
 
 
@@ -240,6 +249,10 @@ footer{
 
     .main-navbar{
         display: block;
+    }
+
+    .logo, .icono-dolar, .header .search {
+        width: 30%;
     }
 
     .bar-icon{
@@ -255,23 +268,8 @@ footer{
         opacity: 1;
     }
 
-    .header-desktop {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .header-desktop img{
-        width: 30vw;
-    }
-
-    .header-desktop .search{
-        width: 30vw;
-        margin-left: 15px;
-    }
-
-    .header-desktop input{
-        width: 100%;
+    .header.search{
+        padding-top: 20px;
     }
 
     .main-navbar ul {
@@ -284,21 +282,11 @@ footer{
     .navbar-separado{
         margin:0px 100px 0px 5px;
     }
-
-    .articulos-formato-desktop{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin: 0px 25px 20px;
-    }
-
-    .articulos-formato-desktop .articulos{
-        margin: 0px 10px;
-    }   
     
     .articulos{
          box-shadow: none;
          transition: box-shadow 2s;
+         width: 20%;
     }
 
     .articulos:hover{
